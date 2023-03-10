@@ -11,7 +11,7 @@ import {
 import useSiteMetadata from '../hooks/useSiteMetadata'
 
 type LayoutProps =  {
-  pageTitle: string
+  pageTitle: string | null | undefined
 }
 
 const Layout = ({ pageTitle, children }: React.PropsWithChildren<LayoutProps>) => {
