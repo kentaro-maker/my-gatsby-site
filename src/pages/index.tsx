@@ -1,5 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import { Link } from 'gatsby'
+import Layout from "../layouts/layout"
 
 const pageStyles = {
   color: "#232129",
@@ -139,8 +141,12 @@ const links = [
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
+      <Layout pageTitle="Home Page">
+        <p>I'm making this by following the Gatsby Tutorial.</p>
+      </Layout>
+
       <h1 style={headingStyles}>
-        Congratulations
+      CongratulationsCongratulationsCongratulationsCongratulations
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
       </h1>
